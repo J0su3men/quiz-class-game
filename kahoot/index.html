@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
+   
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+   
     <meta charset="utf-8">
     <meta name="viewport" content="width=divice-width, initial-">
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <title>kahuvg</title>
+<link type="text/css" rel="stylesheet" href="fonts/material-diseing-icons/material-icons.css"  media="screen,projection"/>
+    <title>Index</title>
   </head>
-  <body>
+  <style>
 
+	  #particles-js
+	  {
+		  width: 100%;
+		  height: 300px;
+	  }
+	</style>
+	
+	
+	
+  <body id="particles-js">
+    
     <nav>
-      <div class="nav-wrapper purple">
-        <a href="#" class="brand-logo right ">Logo</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
+	<div class="nav-wrapper purple">
+		<a href="#" class="brand-logo right ">Logo</a>   
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         
+         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a href="iniciar_sesion.html">Iniciar Sesion</a></li>
           <li><a href="acerca_de.html">Acerca de </a></li>
-          <li><a href="collapsible.html">Quines somos</a></li>
+          <li><a href="">Quines somos</a></li>
+          <li><a href="index.html">Inicio</a></li>
+
         </ul>
-      </div>
-    </nav>
+        
+          <ul class="side-nav" id="mobile-demo">
+          <li><a href="iniciar_sesion.html">Iniciar Sesion</a></li>
+          <li><a href="acerca_de.html">Acerca de </a></li>
+          <li><a href="">Quines somos</a></li>   
+          <li><a href="index.html">Inicio</a></li>
+ 	
+       </ul> 
+	</div>
+</nav>
+    
+     <script>$(".button-collapse").sideNav();</script>
+
+    
+    
     <div class="container">
       <div class="row">
         <div class="col s12 ">
@@ -27,6 +60,7 @@
         </div>
       </div>
     </div>
+
 
       <div class="container">
         <div class="row">
@@ -40,6 +74,15 @@
         </div>
       </div>
       
+      
+          <!-- Inicio de las particulas-->
+       
+   
+	  <script src="js/Particles.js"></script>
+	  <script src="js/Particulas.js"></script>
+   
+     
+    <!-- Fin de las particulas-->
   <!-- START FOOTER -->
   <footer class="page-footer purple darken-1">
     <div class="footer-copyright">
