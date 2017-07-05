@@ -75,19 +75,13 @@
         </div>
       </div>
 
-         <form action="php/valida_sesion.php" method="post">
+         <form id="form-login" action="php/valida_sesion.php" method="post">
          <div class="row margin">
-            <div class="input-field col s12">
-               <i class="material-icons prefix">account_circle</i>
-              <input id="icon_prefix" type="text" class="validate" placeholder="Usuario" name="usuario_sesion">
-            </div>
+			<input type="text" name="usuario" placeholder="USUARIO" required> 
+
           </div>
           <div class="row margin">
-            <div class="input-field col s12">
-               <i class="material-icons prefix">lock</i>
-              <i class="mdi-action-lock-outline prefix"></i>
-              <input id="password" type="password" placeholder="Contraseña" name="password_sesion">
-            </div>
+ 			 <input type="password" name="contraseña" placeholder="CONTRASEÑA" required/>
           </div>
           <div class="row">
             <div class="input-field col s12 m12 l12  login-text">
@@ -96,9 +90,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s12" >
-              <a href="" class="btn waves-effect waves-light col s12" name="abrir_sesion">Iniciar Sesion</a>
-            </div>
+				<input type="submit" name="Ingresar" value="Ingresar"/>
           </div>
           <div class="row">
             <div class="input-field col s6 m6 l6">
